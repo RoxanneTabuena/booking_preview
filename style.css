@@ -430,6 +430,7 @@ h1.contact {
 
 form {
     margin: auto;
+    max-width: 350px;
 }
 /* typography sizing */
 
