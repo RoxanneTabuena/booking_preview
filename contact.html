@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhema Audio</title>
+    <link rel="icon" type="image/x-icon" href="img/Rhema_logo_3d.png">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="contact.js" defer></script>
+</head>
+<body>
+    <h1 class="highlight center shadow-l contact">Rhema Booking</h1>
+    <div id="thanks" class="off black">
+        <div class="purple white-txt">
+            <p class="right title" id="denada">x</p>
+            <p class="title">Your request has been received.</p>
+            <p> We will respond via your preferred method within 1 business day. Thank you!</p>  
+            <p class="right title">-Rhema Admin</p>
+        </div>
+    </div>
+    <form action="" class="vertical purple">
+        <div id="choose">
+            <p class="title">Live Sound</p>
+            <label id="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <p class="title">Backline Rentals</p>
+        </div>
+        <div id="rentals" class="off">
+            <h2 class="title center-flex">Rental Request</h2>
+            <h3 class="title m-top">Desired Pickup:</h3>
+            <div class="desk-flex">
+                <div class="f-element">
+                    <label for="date" class="title">Date:</label>
+                    <input type="date" name="date" id="date">
+                    <label for="time" class="title">Time:</label>
+                    <input type="time" name="time" id="time">
+                </div>
+                <div class="f-element">
+                    <label for="length" class="title">Rental Duration:</label>
+                    <input type="number" name="length" id="length">
+                    <select name="unit" id="unit">
+                        <option value="hours">Hours</option>
+                        <option value="hours">Days</option>
+                        <option value="weeks">Weeks</option>
+                    </select>
+                </div>
+            </div>
+            <h3 class="title m-top">Required Equipment:</h3>
+            <div class="f-element">
+                <input type="checkbox" name="amps" class="category-item" data-id="amps">
+                <label for="amps" class="title">Amps & Cabinets</label>
+            </div>
+            <div id="list-amps" class="off">
+                <h4 class="title center m-top">Rent by Brand:</h4>
+                <div id="logos-amps" class="brand-box">
+                    <div class="brand-item black-filt" data-id="fender" >
+                        <img src="img/logos/fender.png" alt="fender logo">
+                    </div>
+                    <div class="brand-item black-filt" data-id="line6">
+                        <img src="img/logos/line6.png" alt="line6 logo">
+                    </div>
+                    <div class="brand-item black-filt" data-id="magatone">
+                        <img src="img/logos/magnatone.png" alt="magatone logo">
+                    </div>
+                    
+                    <div class="brand-item black-filt" data-id="marshall">
+                        <img src="img/logos/marshall.png" alt="marshall logo">
+                    </div>
+                    <div class="brand-item black-filt" data-id="matchless">
+                        <img src="img/logos/matchless.png" alt="matchless logo">
+                    </div>
+                    <div class="brand-item black-filt" data-id="mesa">
+                        <img src="img/logos/mesa.png" alt="mesa logo">
+                    </div>
+                    <div class="brand-item black-filt" data-id="aguilar">
+                        <img src="img/logos/aguilar.png" alt="aguilar logo">
+                    </div>
+                    <div class="brand-item black-filt" data-id="ampeg">
+                        <img src="img/logos/ampeg.png" alt="ampeg logo">
+                    </div>
+                    <div class="brand-item black-filt" data-id="eden">
+                        <img src="img/logos/eden.png" alt="eden logo">
+                    </div>
+                    <div class="brand-item black-filt" data-id="gk">
+                        <img src="img/logos/gk.png" alt="gk logo">
+                    </div>
+                    <div class="brand-item black-filt" data-id="hartke">
+                        <img src="img/logos/hartke.png" alt="hartke logo">
+                    </div>
+                    <div class="brand-item black-filt" data-id="markbass">
+                        <img src="img/logos/markbass.png" alt="markbass logo">
+                    </div>
+                    <div class="brand-item black-filt" data-id="orange">
+                        <img src="img/logos/orange.png" alt="orange logo">
+                    </div>
+                    <div class="brand-item black-filt" data-id="peavey">
+                        <img src="img/logos/peavey.png" alt="peavey logo">
+                    </div>
+                    <div class="brand-item black-filt" data-id="swr">
+                        <img src="img/logos/swr.png" alt="swr logo">
+                    </div>
+                    <div class="brand-item black-filt" data-id="vox">
+                        <img src="img/logos/vox.png" alt="vox logo">
+                    </div>
+                </div>
+                <div id="list-fender" class="off">
+                    <div class="model">
+                        <div id="model-display">
+                            <h4 class="title">Fender Models:</h4>
+                            <div>
+                                <div id="model-image">
+                                    <img class="bottom" src="img/fender/57-Deluxe.png" alt="57 Deluxe">
+                                </div>
+                                <div id="specs" class="desk">
+                                    <p class="title">57-Deluxe</p>
+                                    <p>12-watt all-tube guitar combo amplifier</p>
+                                    <p>Newly designed single 12in 8-ohm Eminence Special Design alnico speaker</p>
+                                    <p>Original 5E3 circuit with Fender Pure Vintage yellow capacitors and Mercury Magnetics transformers</p>
+                                    <p>Single 12AY7 and single 12AX7 preamp tubes, two GT6V6 power amp tubes and single 5Y3 rectifier tube</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="table">
+                                <input type="checkbox" class="model-item" name="57-Deluxe" id="57-Deluxe">
+                                <label class="table-cell" class="model-label" for="57-Deluxe">57-Deluxe</label>
+                            </div>
+                            <div class="table">
+                                <input type="checkbox" class="model-item" name="59-Bassman-LTD" id="59-Bassman-LTD">
+                                <label class="table-cell" class="model-label" for="59-Bassman-LTD">59-Bassman-LTD</label>
+                            </div>
+                            <div class="table">
+                                <input type="checkbox" class="model-item" name="Blues-Deluxe" id="Blues-Deluxe">
+                                <label class="table-cell" class="model-label" for="Blues-Deluxe">Blues-Deluxe</label>
+                            </div>
+                            <div class="table">
+                                <input type="checkbox" class="model-item" name="Blues-Deville" id="Blues-Deville">
+                                <label class="table-cell" class="model-label" for="Blues-Deville">Blues-Deville</label>
+                            </div>
+                            <div class="table">
+                                <input type="checkbox" class="model-item" name="Blues-Junior" id="Blues-Junior">
+                                <label class="table-cell" class="model-label" for="Blues-Junior">Blues-Junior</label>
+                            </div>
+                            <div class="table">
+                                <input type="checkbox" class="model-item" name="Custom-Vibrolux-Reverb" id="Custom-Vibrolux-Reverb">
+                                <label class="table-cell" class="model-label" for="Custom-Vibrolux-Reverb">Custom-Vibrolux-Reverb</label>
+                            </div>
+                            <div class="table">
+                                <input type="checkbox" class="model-item" name="Deluxe-Reverb" id="Deluxe-Reverb">
+                                <label class="table-cell" class="model-label" for="Deluxe-Reverb">Deluxe-Reverb</label>
+                            </div>
+                            <div class="table">
+                                <input type="checkbox" class="model-item" name="Hot-Rod-DeVille-212" id="Hot-Rod-DeVille-212">
+                                <label class="table-cell" class="model-label" for="Hot-Rod-DeVille-212">Hot-Rod-DeVille-212</label>
+                            </div>
+                            <div class="table">
+                                <input type="checkbox" class="model-item" name="Hot-Rod-DeVille-410" id="Hot-Rod-DeVille-410">
+                                <label class="table-cell" class="model-label" for="Hot-Rod-DeVille-410">Hot-Rod-DeVille-410</label>
+                            </div>
+                            <div class="table">
+                                <input type="checkbox" class="model-item" name="Pro-Junior" id="Pro-Junior">
+                                <label class="table-cell" class="model-label" for="Pro-Junior">Pro-Junior</label>
+                            </div>
+                            <div class="table">
+                                <input type="checkbox" class="model-item" name="Super-Reverb" id="Super-Reverb">
+                                <label class="table-cell" class="model-label" for="Super-Reverb">Super-Reverb</label>
+                            </div>
+                            <div class="table">    
+                                <input type="checkbox" class="model-item" name="Super-Sonic-212-cab" id="Super-Sonic-212-cab">
+                                <label class="table-cell" class="model-label" for="Super-Sonic-212-cab">Super-Sonic-212-cab</label>
+                            </div>
+                            <div class="table">
+                                <input type="checkbox" class="model-item" name="'Twin-Amp'" id="'Twin-Amp'">
+                                <label class="table-cell" class="model-label" for="'Twin-Amp'">'Twin-Amp'</label>
+                            </div>
+                            <div class="table">
+                                <input type="checkbox" class="model-item" name="65-Twin-Reverb" id="65-Twin-Reverb">
+                                <label class="table-cell" class="model-label" for="65-Twin-Reverb">65-Twin-Reverb</label>
+                            </div>
+                            <div class="table">
+                                <input type="checkbox" class="model-item" name="63-Tube-Reverb" id="63-Tube-Reverb">
+                                <label class="table-cell" class="model-label" for="63-Tube-Reverb">63-Tube-Reverb</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+            <div class="f-element">
+                <input type="checkbox" name="guitars" class="category-item" data-id="guitars">
+                <label for="guitars" class="title">Guitars</label>
+            </div>
+            <div class="f-element">
+                <input type="checkbox" name="keyboards" class="category-item" data-id="keyboards">
+                <label for="keyboards" class="title">Keyboards</label>
+            </div>
+            <div class="f-element">
+                <input type="checkbox" name="drum-kits" class="category-item" data-id="drum-kits">
+                <label for="drum-kits" class="title">Drum Kits</label>
+            </div>
+            <div class="f-element">
+                <input type="checkbox" name="cymbals" class="category-item" data-id="cymbals">
+                <label for="cymbals" class="title">Cymbals</label>
+            </div>
+            <div class="f-element">
+                <input type="checkbox" name="percussion" class="category-item" data-id="percussion">
+                <label for="percussion" class="title">Percussion</label>
+            </div>
+            <div class="f-element">
+                <input type="checkbox" name="loudspeaker systems" class="category-item" data-id="loudspeaker systems">
+                <label for="loudspeaker systems" class="title">Loudspeaker Systems</label>
+            </div>
+            <div class="f-element">
+                <input type="checkbox" name="electronics" class="category-item" data-id="electronics">
+                <label for="electronics" class="title">Electronics</label>
+            </div>
+            <div class="f-element">
+                <input type="checkbox" name="wireless-mics" class="category-item" data-id="wireless-mics">
+                <label for="wireless-mics" class="title">Wireless Mics</label>
+            </div>
+            <div class="f-element">
+                <input type="checkbox" name="iems" class="category-item" data-id="iems">
+                <label for="iems" class="title">Wireless In Ear Monitors</label>
+            </div>
+            <div class="f-element">
+                <input type="checkbox" name="comunications" class="category-item" data-id="comunications">
+                <label for="comunications" class="title">Communications</label>
+            </div>
+        </div>
+        <div id="events">
+            <h2 class="title center-flex shadow-l-b">Live Sound Experts</h2>
+            <div class="f-element">
+                <label for="type" class="title ">Event Type:</label>
+                <select name="type" id="type">
+                    <option value="headliner">Headline Performer</option>
+                </select>
+            </div>
+            <div class="f-element">
+                <label for="date" class="title">Date:</label>
+                <input type="date" name="name" id="name">
+            </div>
+            <div class="f-element">
+                <label for="location" class="title">Location</label>
+                <input type="text" name="location" id="location">
+            </div>
+            <div class="vertical m-top">
+                <label for="details" class="title">Event Details:</label>
+                <textarea name="details" id="details"></textarea>
+            </div>
+        </div>
+        <h3 class="title center m-top relative">Preferred Communication:</h3>
+        <div class="f-element">
+            <label for="name" class="title">Name:</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div class="desk-flex last">
+            <div class="f-element">
+                <input type="radio" name="contact" value="phone" id="phone">
+                <label for="name" class="title">Phone:</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="f-element">
+                <input type="radio" name="contact" value="email" id="email">
+                <label for="name" class="title">Email:</label>
+                <input type="text" name="name" id="name">
+            </div>
+        </div>
+
+        <button type="submit">send</button>
+    </form>
+</body>
+</html>
