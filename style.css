@@ -554,7 +554,7 @@ input[type='number']{
 }
 
 #model-image{
-    width: 7rem;
+    height: 7rem;
 }
 .list > .table{
     margin-left: 3rem;
