@@ -277,6 +277,7 @@ const button = document.querySelector('button')
 const denada = document.getElementById('denada')
 const submit = (e) => {
   e.preventDefault()
+  window.scrollTo({ top: 0, behavior: 'instant'})
   thanks.classList.remove('off')
   thanks.classList.add('thanks')
 
