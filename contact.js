@@ -237,7 +237,7 @@ const updateImage = (id) => {
     }else{
         checkedModels.add(id)
     }
-    image.src = `/img/fender/${id}.png`
+    image.src = `https://imagehostclub.s3.us-west-1.amazonaws.com/rhema/fender/${id}.png`
     image.alt = id.split('-').join(' ')
     addSpecs(id)
   }
@@ -267,7 +267,7 @@ document.addEventListener('mouseover', (e) => {
   const table = e.target.closest('.table');
   if (table && checkedModels.size === 0) {
     const id = table.children[0].id
-    image.src = `/img/fender/${id}.png`
+    image.src = `https://imagehostclub.s3.us-west-1.amazonaws.com/rhema/fender/${id}.png`
     image.alt = id.split('-').join(' ')
     addSpecs(id)
   }
